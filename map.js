@@ -8,7 +8,7 @@ window.gdrive = (function(){
     var CURR_INDEX = 0;
     var STOP = false;
     var PAUSE = false;
-    var KEY = 'AIzaSyAUuoxYS81W9KvpXJCZX2NjURVMoMCswII';
+    var KEY = 'AIzaSyCW32SUyrREMX1_cJSE41WmXaBLQVJGQwM';
     var currMarker;
     
     function init(lat, lng){        
