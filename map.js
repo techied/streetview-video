@@ -87,9 +87,9 @@ window.gdrive = (function(){
         var i;
         for(i=1; i<points.length; i++){
             bearing = computeHeading(points[i-1], points[i]);
-            imgs.push(["http://maps.googleapis.com/maps/api/streetview?size=600x300&location="+ points[i-1].lat()+"," + points[i-1].lng() +"&heading="+bearing+"&pitch=-1.62&sensor=false&key="+KEY, points[i-1]]);
+            imgs.push(["https://maps.googleapis.com/maps/api/streetview?size=600x300&location="+ points[i-1].lat()+"," + points[i-1].lng() +"&heading="+bearing+"&pitch=-1.62&sensor=false&key="+KEY, points[i-1]]);
         }
-        imgs.push(["http://maps.googleapis.com/maps/api/streetview?size=600x300&location="+ points[i-1].lat()+"," + points[i-1].lng() +"&heading="+bearing+"&pitch=-1.62&sensor=false&key="+KEY, points[i-1]]);
+        imgs.push(["https://maps.googleapis.com/maps/api/streetview?size=600x300&location="+ points[i-1].lat()+"," + points[i-1].lng() +"&heading="+bearing+"&pitch=-1.62&sensor=false&key="+KEY, points[i-1]]);
         return imgs
     }
     function processDirection(response) {
