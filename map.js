@@ -4,7 +4,7 @@ window.gdrive = (function(){
     var interpolate = google.maps.geometry.spherical.interpolate;
     var SPEED = 300;
     var map, directionsService;
-    var densityFactor = 1;
+    var densityFactor = 16;
     var CURR_INDEX = 0;
     var STOP = false;
     var PAUSE = false;
