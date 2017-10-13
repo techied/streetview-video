@@ -48,7 +48,8 @@ window.gdrive = (function(){
         var request = {
             origin: origin,
             destination: destination,
-            travelMode: google.maps.DirectionsTravelMode.DRIVING
+            travelMode: google.maps.DirectionsTravelMode.DRIVING,
+            avoidTolls: true
         };
         directionsService.route(request, function(response, status){
             if (status == google.maps.DirectionsStatus.OK) {
